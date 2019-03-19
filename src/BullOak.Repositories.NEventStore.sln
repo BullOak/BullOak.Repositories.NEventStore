@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{8BBC7152-F4BE-4DBB-A769-BA05D2F262E2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BullOak.Repositories.NEventStore", ".\BullOak.Repositories.NEventStore\BullOak.Repositories.NEventStore.csproj", "{770856B6-D55B-47A8-B59C-2E697C8BF4E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BullOak.Repositories.NEventStore.Test.Integration", ".\BullOak.Repositories.NEventStore.Test.Integration\BullOak.Repositories.NEventStore.Test.Integration.csproj", "{A3AF25F4-FD47-43F0-B006-43EEAE487A22}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{770856B6-D55B-47A8-B59C-2E697C8BF4E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{770856B6-D55B-47A8-B59C-2E697C8BF4E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{770856B6-D55B-47A8-B59C-2E697C8BF4E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{770856B6-D55B-47A8-B59C-2E697C8BF4E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3AF25F4-FD47-43F0-B006-43EEAE487A22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3AF25F4-FD47-43F0-B006-43EEAE487A22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3AF25F4-FD47-43F0-B006-43EEAE487A22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3AF25F4-FD47-43F0-B006-43EEAE487A22}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A3AF25F4-FD47-43F0-B006-43EEAE487A22} = {8BBC7152-F4BE-4DBB-A769-BA05D2F262E2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D852511A-3738-4A8F-A509-FBC6D2690EF8}
+	EndGlobalSection
+EndGlobal
