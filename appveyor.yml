@@ -11,9 +11,11 @@ version: 2.0.{build}
 environment:
 #  standard_version: '2.2.$(appveyor_build_number)'
   standard_version: '2.0.1'
+  BullOak_NEventStore_Sql: "Persist Security Info=True;User ID=sa;Password=Password12!;Initial Catalog=BullOakTest;Data Source=localhost\\SQL2017"
   
 before_build:
   - nuget restore ./src/BullOak.Repositories.NEventStore.sln
+  - sqlcmd -S ".\SQL2017" -U "sa" -P "Password12!" -Q "CREATE DATABASE BullOakTest"
   - ps: |
         Write-Output "env.appveyor_build_number = $env:appveyor_build_number"
         Write-Output "env.standard_version = $env:standard_version"
@@ -33,6 +35,9 @@ max_jobs: 1
 
 # Build worker image (VM template)
 image: Visual Studio 2017
+
+services:
+  - mssql2017
 
 # clone directory
 clone_folder: c:\projects\BullOak.Repositories.NEventStore
